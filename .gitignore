@@ -3,6 +3,6 @@
 ._*
 .vscode
 certbot-help.txt
-/nginx-proxy-manager/data/*
+nginx-proxy-manager/data/
 
 .env
