@@ -3,3 +3,6 @@
 
 # Ports
 - '85:80'
+
+# If using Portainer
+copy and paste conf.d/nginx.conf to /etc/nginx/conf.d/
