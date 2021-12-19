@@ -3,5 +3,6 @@
 ._*
 .vscode
 certbot-help.txt
+/data
 
 .env
