@@ -29,7 +29,7 @@ services:
     depends_on: 
       - wordpress-fpm
     ports:
-      - 80:80
+      - 85:80
     volumes:
       - ./conf.d:/etc/nginx/conf.d
       - wp_files:/var/www/html
