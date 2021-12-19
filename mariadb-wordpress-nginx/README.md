@@ -1,2 +1,2 @@
 # Maria DB - Wordpress - Nginx
-Fill up .env 
+- Fill up .env 
