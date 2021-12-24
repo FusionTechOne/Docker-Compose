@@ -31,7 +31,7 @@ services:
     ports:
       - 85:80
     volumes:
-      - ./conf.d:/etc/nginx/conf.d
+      - /opt/docker/conf.d:/etc/nginx/conf.d
       - wp_files:/var/www/html
 
 volumes: 
