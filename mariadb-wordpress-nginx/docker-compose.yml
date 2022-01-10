@@ -10,10 +10,10 @@ services:
       - /var/lib/docker/volumes/Wordpress_Backup_v1/db_data:/var/lib/mysql
     restart: always
     environment:
-      - MYSQL_ROOT_PASSWORD=Asdf1234Asdf1234!
-      - MYSQL_DATABASE=fusiontech1
-      - MYSQL_USER=fusiontech1_user
-      - MYSQL_PASSWORD=Asdf1234Asdf1234!
+      - MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD}"
+      - MYSQL_DATABASE: "${MYSQL_DATABASE}"
+      - MYSQL_USER: "${MYSQL_USER}"
+      - MYSQL_PASSWORD: "${MYSQL_PASSWORD}"
     expose:
       - 3306
       - 33060
@@ -25,10 +25,10 @@ services:
       - 85:80
     restart: always
     environment:
-      - WORDPRESS_DB_HOST=db
-      - WORDPRESS_DB_USER=fusiontech1_user
-      - WORDPRESS_DB_PASSWORD=Asdf1234Asdf1234!
-      - WORDPRESS_DB_NAME=fusiontech1
+      - WORDPRESS_DB_HOST: "${WORDPRESS_DB_HOST}"
+      - WORDPRESS_DB_USER: "${WORDPRESS_DB_USER}"
+      - WORDPRESS_DB_PASSWORD: "${WORDPRESS_DB_PASSWORD}"
+      - WORDPRESS_DB_NAME: "${WORDPRESS_DB_NAME}"
 volumes:
   db_data:
   html_data:
